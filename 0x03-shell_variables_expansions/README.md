@@ -1,0 +1,1 @@
+this is a read me file for shell variables expansions it is about using alias command and many other linux commands
