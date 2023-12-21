@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script shall print content of /etc/passwd
+
+x=/etc/passwd
+while read -r line;
+do
+  echo "$line" | cut -d ':' -f1,3,6
+done < "$x"
