@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#this script shall displays hr and mins
+
+hr=0
+while [ $hr -le 12 ]
+do
+  echo "Hour: $hr"
+  mins=1
+  while [ $mins -le 59 ]
+  do
+    echo "$mins"
+    ((mins++))
+  done
+  ((hr++))
+done
