@@ -1,0 +1,1 @@
+this is a readme fiel for the task 0x04-loops_conditions_and_parsing for the alx software engineering program this shall consist of 11 mandatory task and 4 advanced
