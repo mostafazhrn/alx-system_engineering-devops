@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script shall print nest school 10x
+
+for ((x = 0; x < 10; x++))
+do
+ echo "Best School"
+done
