@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script shall prnt stmnt 10x using while and if condition
+
+x=0
+while [ $x -lt 10 ]
+do
+  if [ $x -eq 8 ]
+  then
+    echo "Best School"
+    echo "Hi"
+  else
+    echo "Best School"
+  fi
+  ((x++))
+done
