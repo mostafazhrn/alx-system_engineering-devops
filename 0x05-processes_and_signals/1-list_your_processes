@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script shall print current list of process
+
+ps -auxf
