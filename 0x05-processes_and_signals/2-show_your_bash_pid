@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script shall print line containing bash to get PID
+
+ps -auxf | grep bash
