@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script shall print the process with bash in it
+
+pgrep -l bash
