@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# This script shall display to infinty and beyond with sleep 2 and print custom
+# msgs on exit
+
+sudo bash -c "echo $$ > /var/run/myscript.pid"
+trap "echo 'Y U no love me?!'" SIGINT
+trap "sudo rm -f /var/run/myscript.pid; exit" SIGQUIT
+trap "sudo rm -f /var/run/myscript.pid; echo I hate the kill command; exit" SIGTERM
+for (( ; ; ))
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
