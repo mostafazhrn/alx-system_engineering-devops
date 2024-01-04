@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This script shall use nc to listen on prt 98
+nc -l localhost 98

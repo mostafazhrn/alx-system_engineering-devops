@@ -1,0 +1,1 @@
+this is a readem file for the task 0x08-networking_basics_2 for the alx software engineering program it consists of 2 mandatory tasks and 1 advanced
