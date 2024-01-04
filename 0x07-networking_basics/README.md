@@ -1,0 +1,1 @@
+this is a readme file for the task 0x07-networking_basics which consists of 6 mandatory tasks for the alx software engineering program
