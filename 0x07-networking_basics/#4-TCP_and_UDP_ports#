@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# This script shall create a listeneing UDP and TCP port listenining
-
-netstat -lp
