@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+# This script take arg of ip and ping it
