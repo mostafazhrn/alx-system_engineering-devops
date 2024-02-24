@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# THis conf to connect to server without typing passwd only thrw key
+
+IdentifyFile ~/.ssh/school
+PasswordAuthentication no
