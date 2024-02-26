@@ -1,0 +1,1 @@
+This is a readme file for the task 0x0C-web_server which consists of 4 mandatory tasks and 1 advanced as follows
