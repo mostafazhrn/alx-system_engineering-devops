@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# THis script shall debug the server with starting apache server
+
+sudo service apache2 start
