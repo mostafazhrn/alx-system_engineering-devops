@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# this script shall config nginx to listenon port 80
+
+pkill nginx
+sudo sed -i 's/8080/80' /etc/nginx/sites-available/default
+sudo service nginx restart

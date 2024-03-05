@@ -1,0 +1,1 @@
+This is a readme file for the task 0x0E-web_stack_debugging_1 for the alx software engineering program which consists of 1 mandatory task and 1 advanced
