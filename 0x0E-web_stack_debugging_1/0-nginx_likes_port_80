@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 # this script shall config nginx to listenon port 80
 
-sudo apt -y update
-sudo apt -y install nginx
 ln -sf /etc/nginx/sites-available/default etc/nginx/sites-enabled/default
 sudo service nginx restart
