@@ -1,0 +1,1 @@
+This is a readme file for the task 0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter for the alx software engineering program which consists of 1 mandatory task and 2 advanced as follows
