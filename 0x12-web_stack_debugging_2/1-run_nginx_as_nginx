@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script shall fix the broken nginx and run as ngnix user
+
+sudo service apache2 stop
+sudo pkill apache2
+if grep -q "listen 80" /etc/nginx/sites-available/default; then
+    sed -i 's/listen 80/listen 8080/g' /etc/nginx/sites-available/default
+fi
+
+if grep -q "listen \[::\]:80" /etc/nginx/sites-available/default; then
+    sed -i 's/listen \[::\]:80/listen [::]:8080/g' /etc/nginx/sites-available/default
+fi
+chown nginx /etc/nginx/nginx.conf
+sudo -u nginx chmod u+r /etc/nginx/nginx.conf
+sudo -u nginx service nginx restart
