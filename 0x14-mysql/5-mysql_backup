@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# THis script shall create backup for db with passwd as 1st arg
+mysqldump -u root -p"$1" --all-databases > backup.sql
+tar -czvf $(date +%d-%m-%Y).tar.gz backup.sql
