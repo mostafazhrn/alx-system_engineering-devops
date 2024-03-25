@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """THis script shall gather data from API to return from about employees"""
+import csv
 import requests
 import sys
-import csv
 
 
 if __name__ == "__main__":
