@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""THis script shall gather data from API to return from about employees"""
+"""THis script shall export data in json format"""
 import json
 import requests
 import sys
