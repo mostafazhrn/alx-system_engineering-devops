@@ -1,10 +1,16 @@
 #!/usr/bin/python3
-""" THis script shall count the number of subscribers for given subreddit """
+"""
+THis script shall count the number of subscribers for given subreddit to return
+the num of total subs
+"""
 import requests
 
 
 def number_of_subscribers(subreddit):
-    """ THis shall query the Reddit API and return number of subscribers"""
+    """
+    THis shall query the Reddit API and return number of subscribers or to
+    give zero if fake sub reddit
+    """
     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
     hdrs = {'User-Agent': 'Mozilla/5.0'}
     resp = requests.get(url, headers=hdrs, allow_redirects=False)
