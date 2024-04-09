@@ -3,6 +3,8 @@
 THis script shall count the number of subscribers for given subreddit to return
 the num of total subs
 """
+import requests
+from requests import get
 
 
 def number_of_subscribers(subreddit):
@@ -10,12 +12,11 @@ def number_of_subscribers(subreddit):
     THis shall query the Reddit API and return number of subscribers or to
     give zero if fake sub reddit
     """
-    import requests
-    url = requests.get('https://www.reddit.com/r/{}/about.json'
-                       .format(subreddit),
-                       headers={'User-Agent': 'Python/requests'},
-                       allow_redirects=False)
-    if url.status_code != 200:
+    bz_url = 'https://www.reddit.com'
+    url = '{base}/r/{subreddit}/about.json'.format(base=bz_url,
+                                                   subreddit=subreddit)
+    usr_agt = {'User-Agent': 'Python/requests'}
+    respo = requests.get(url, headers=usr_agt, allow_redirects=False)
+    if respo.status_code != 200:
         return 0
-    else:
-        return url.json().get('data').get('subscribers')
+    return respo.json().get('data').get('subscribers')
