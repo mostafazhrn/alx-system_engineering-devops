@@ -3,8 +3,8 @@
 THis script shall count the number of subscribers for given subreddit to return
 the num of total subs
 """
-from requests import get
 import requests
+from requests import get
 
 
 def number_of_subscribers(subreddit):
