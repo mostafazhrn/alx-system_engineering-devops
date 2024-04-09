@@ -8,12 +8,18 @@ import requests
 
 def top_ten(subreddit):
     """ THis shall query the Reddit API to prnt titles of first 10 hot posts"""
-    url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    hdrs = {'User-Agent': 'Mozilla/5.0'}
-    resp = requests.get(url, headers=hdrs, allow_redirects=False)
-    if resp.status_code != 200:
+    bz_url = 'https://www.reddit.com'
+    url = '{base}/r/{subreddit}/hot.json'.format(base=bz_url,
+                                                 subreddit=subreddit)
+    usr_agt = {'User-Agent': 'Python/requests'}
+    respo = requests.get(url, headers=usr_agt, allow_redirects=False)
+    if respo.status_code != 200:
         print(None)
         return
-    posts = resp.json().get('data').get('children')
-    for post in posts[:10]:
-        print(post.get('data').get('title'))
+    else:
+        respo_json = respo.json()
+        if respo_json.get('data') and respo_json.get('data').get('children'):
+            psts = respo_json.get('data').get('children')
+            for pst in psts[:10]:
+                if pst.get('data') and pst.get('data').get('title'):
+                    print(pst.get('data').get('title'))
