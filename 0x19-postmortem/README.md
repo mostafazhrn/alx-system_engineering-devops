@@ -1,8 +1,8 @@
 This is a readme file for the task 0x19-postmortem as part of the alx software engineering program
 
                     Postmortem
-Server out of service incident report
-Summary of the issue
+-Server out of service incident report-
+-Summary of the issue-
 On 10th of April, 2024 at 18:28 GMT after doing some updates on the webserver one of the engineers figured out that the apache server running is giving 500 internal server error and the server is completely out of service. We discovered that the problem is affecting 100 % of the users and it rendered the server out of service. The cause of the problem was a typo in configuration file of wordpress.
 Timeline (GMT)
 18:25: Push updates to the server
