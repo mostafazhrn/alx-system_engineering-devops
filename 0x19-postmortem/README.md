@@ -1,4 +1,4 @@
-This is a readme file for the task 0x19-postmortem as part of the alx software engineering progra
+This is a readme file for the task 0x19-postmortem as part of the alx software engineering program
 
                     Postmortem
 Server out of service incident report
