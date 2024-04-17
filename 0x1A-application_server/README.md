@@ -1,0 +1,1 @@
+This is a readme file for the task 0x1A-application_server for the alx software engeineering program which consists of 6 mandatory task and 2 advanced
